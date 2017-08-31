@@ -1,0 +1,176 @@
+BODY {
+MARGIN: 0px; 
+PADDING: 0px;
+BACKGROUND: white;
+COLOR: black;
+} 
+
+A:link {background: none; color: #800000; text-decoration: underline; cursor: pointer;}
+A:visited {background: none; color: #800000; text-decoration: underline; cursor: pointer;}
+A:hover {background: none; color: #ff0000; text-decoration: underline; cursor: pointer;}
+A:active { background: none; color: #ff0000; background: underline; cursor: pointer;}
+.active{background-color: #"pink";}
+.Global {
+WIDTH: 100%;
+HEIGHT: 100%;
+}
+
+.Global TD {
+BORDER: 1px solid green;
+VERTICAL-ALIGN: top;
+}
+
+.Header {
+WIDTH: 100%;
+HEIGHT: 100px;
+PADDING: 0px; 
+}
+
+.Header TD {
+BORDER: 0px;
+VERTICAL-ALIGN: top;
+TEXT-ALIGN: left;
+}
+
+.NavBar {
+WIDTH: 100%;
+HEIGHT: 27px;
+}
+
+.NavBar TD {
+BACKGROUND: url("greenline-gradient.gif") repeat;
+COLOR: maroon;
+FONT: normal 16px verdana,sans-serif;
+PADDING: 0px 0px 0px 30px;
+TEXT-ALIGN: left;
+BORDER: 0px;
+VERTICAL-ALIGN: middle;
+}
+
+.NavBarMenu TD {
+BACKGROUND: none;
+COLOR: maroon;
+FONT: bold 16px verdana,sans-serif;
+PADDING: 0px 20px 0px 0px;
+BORDER: 0px;
+VERTICAL-ALIGN: middle;
+}
+
+.Left {
+BACKGROUND: #aec8ae;
+COLOR: inherit;
+}
+
+.Content {
+BACKGROUND: #e4ede4;
+COLOR: inherit;
+TEXT-ALIGN: justify;
+}
+
+.Right {
+BACKGROUND: #a4c1a4;
+COLOR: inherit;
+}
+
+.BoxStyle {
+WIDTH: 90%;
+BORDER: 1px solid #738873;
+MARGIN-TOP: 15px;
+}
+
+.BoxStyle TD {
+BACKGROUND: #88ae88;
+COLOR: inherit;
+PADDING: 0px 0px 0px 25px;
+TEXT-ALIGN: left;
+BORDER: 0px;
+}
+
+.HeadingStyle {
+BACKGROUND: inherit;
+COLOR: #000000;
+FONT: bold italic 20px Verdana,sans-serif;
+}
+
+P {
+FONT: 13px arial,sans-serif;
+}
+
+.Padded {
+PADDING: 20px;
+}
+
+.SmallFont {
+FONT: 13px Verdana,sans-serif;
+}
+
+.MedFontBold {
+FONT: bold 15px Verdana,sans-serif;
+}
+
+.SmallFont TD {
+FONT: 13px Verdana,sans-serif;
+}
+
+.MedFontBold TD {
+FONT: bold 15px Verdana,sans-serif;
+}
+
+.Footer {
+BACKGROUND: url('greenbg-fade.gif') repeat-y #ffffff;
+COLOR: #000000;
+FONT: 13px Verdana,sans-serif;
+HEIGHT: 22px;
+TEXT-ALIGN: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+   BACKGROUND: url("greenline-gradient.gif") repeat;
+text-decoration: underline;
+FONT: bold 16px verdana,sans-serif;
+    color: inherit;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+FONT: bold 16px verdana,sans-serif;
+    position: absolute;
+    background-color: #e4ede4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+FONT: bold 16px verdana,sans-serif;
+    color: inherit;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:#88ae88; color:maroon;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+

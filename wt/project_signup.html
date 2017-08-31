@@ -1,0 +1,193 @@
+
+<html>
+
+<head>
+
+    <title>SAP Online Shoping-Sign Up page</title>
+
+    <script>
+
+        function samy() {
+            var i = 0;
+
+            var x = document.forms["myform"]["fname"].value;
+
+            var y = document.forms["myform"]["fage"].value;
+
+            var z = document.forms["myform"]["mph"].value;
+
+            var e = document.forms["myform"]["ename"].value;
+
+            var ad = document.forms["myform"]["address"].value;
+
+            var p = document.forms["myform"]["pcode"].value;
+
+            var pas = document.forms["myform"]["pass"].value;
+           
+            //name
+            if (x == null || x == "") {
+                i = 1;
+                alert("Enter name");
+             
+            }
+
+            if (document.forms["myform"]["fname"].value.length > 30) {
+                i = 1;
+                alert("Enter only 30 characters");
+               
+            }
+
+            var reg = /^[A-za-z]+$/;
+
+            if (!x.match(reg)) {
+                i = 1;
+                alert("Enter valid name");
+              
+            }
+
+            //age
+            if (y == null || y == "") {
+                i = 1;
+                alert("Enter age");
+               
+            }
+
+            if (y < 10 || y > 50) {
+                i = 1;
+                alert("Age is not valid");
+
+                
+            }
+
+            if (isNaN(y)) {
+                i = 1;
+                alert("Enter only numbers");
+                
+
+            }
+
+            //mobile
+            if (z < 7000000000 || z > 9999999999) {
+                i = 1;
+                alert("Enter correct mobile number");
+                
+            }
+
+            //email checking
+            if (e == null || e == "") {
+                i = 1;
+                alert("Enter email address");
+              
+            }
+           
+
+            //address
+            if (ad == "") {
+                i = 1;
+                alert("please Enter the details");
+
+                document.form.address.focus();
+
+                
+            }
+
+            if ((ad.length < 20) || (ad.length > 100)) {
+                i = 1;
+                alert(" Your textarea must be 20 to 100 characters");
+
+                document.form.address.select();
+               
+             
+            }
+
+            //pincode
+            
+            if (p.length != 6) {
+                i = 1;
+                alert("Enter valid pincode");
+               
+            }
+           
+
+            //password
+            if (pas == "") {
+                i = 1;
+                alert("Please Enter Your Password");
+                document.form.pass.focus();
+               
+            }
+            if ((pas.length < 4) || (pas.length > 10)) {
+                i = 1;
+                alert("Your Password must be 4 to 10 Character");
+                document.form.pass.select();
+               
+            }
+            if (i == 0) {
+                alert("Registered successfully!!! Thank You!!!...");
+            }
+        
+        }
+        function mailck() {
+            var x = document.getElementById("emname");
+            x.value = x.value.toLowerCase();
+        }
+        function change(x) {
+
+            x.style.background = "yellow";
+
+        }        function chback(x) {
+
+            x.style.background = "white";
+
+        }
+    </script>
+
+</head>
+
+
+<body bgcolor="skyblue">
+    <h1><center><font color="blue"> SAP Online Shopping</font></center></h1>
+    <h2><marquee><font color="green">Shop With US...</font></marquee></h2>
+
+    <form name="myform" method="post">
+        <ol>
+
+            Name:
+            <input type="text" name="fname" onfocus="change(this)" onblur="chback(this)">
+            <br />
+
+            Age :
+            <input type="text" name="fage" onfocus="change(this)" onblur="chback(this)">
+            <br />
+
+            P_no:
+            <input type="number" name="mph" onfocus="change(this)" onblur="chback(this)">
+            <br />
+
+            E-mail:
+            <input type="text" name="ename" id="emname" onfocus="change(this)" onblur="chback(this)" onchange="mailck()">
+            <br />
+
+
+            Address:
+
+            <textarea type="text" name="address" cols="60" rows="10" onfocus="change(this)" onblur="chback(this)"></textarea>
+            <br />
+
+            Pin code:
+            <input type="number" name="pcode" onfocus="change(this)" onblur="chback(this)">
+            <br />
+
+            Passsword:
+            <input type="password" name="pass" onfocus="change(this)" onblur="chback(this)">
+            <br />
+
+            <input type="button" value="submit"  onclick="samy()">
+
+           
+        </ol>
+    </form>
+
+</body>
+
+</html>

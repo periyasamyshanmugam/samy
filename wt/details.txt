@@ -1,0 +1,213 @@
+shirt 1
+Levi's Boys Checkered Casual Red Shirt|?649
+Fabric: Cotton
+Regular Fit, Half Sleeve
+Collar Type: Classic collar
+Pattern: Checkered
+Set of 1
+
+shirt 2
+Levi's Boys Checkered Casual Multicolor Shirt|?649
+Regular Fit, Full Sleeve
+Collar Type: Semi Spread Collar
+Pattern: Checkered
+Set of 1
+
+jeans1
+Wrangler Skinny Men's Blue Jeans
+?1,114
+Brand Fit: Vegas
+Fabric: Cotton
+Low Rise Jeans
+
+jeans2
+Wrangler Regular Men's Blue Jeans
+?1,194
+Brand Fit: Greensboro
+Fabric: 100% Cotton
+Mid Rise Jeans
+
+shoe1
+Puma Strike Fashion II DP Running Shoes  (Black, Blue)
+?1,817
+Colour: Black, Blue
+Closure: Laced
+
+shoe2
+Aero Power Play Running Shoes  (Black, Orange)
+?499
+Colour: Black, Orange
+1 inch Heel Height
+Outer Material: Mesh, Synthetic Leather
+Closure: Laced
+
+saree1
+Amar Enterprise Embriodered Daily Wear Chiffon Sari  (Red)|?539
+Style: Sari
+Saree Fabric: Chiffon
+Blouse Fabric: Dupion Silk
+With Blouse Piece
+Type: Daily Wear
+
+saree2
+Kajal Sarees Applique Fashion Net Sari  (Blue)|?840
+Style: Sari
+Saree Fabric: Net
+Blouse Fabric: Chiffon
+With Blouse Piece
+Type: Fashion
+
+chudi1
+Paroma Art Silk Printed, Solid Salwar Suit Dupatta Material  (Un-stitched)|?692
+Type: Salwar Suit Dupatta Material
+Fabric: Silk
+Pattern: Printed, Solid
+Color: Red
+Package Contains:1 Top 1 Bottom 1 Dupatt
+
+chudi2
+Paroma Art Chanderi Printed Salwar Suit Dupatta Material  (Un-stitched)|?714
+Type: Salwar Suit Dupatta Material
+Fabric: Chanderi
+Pattern: Printed
+Color: Orange
+Package Contains:1 Top 1 Bottom 1 Dupatt
+
+lshoes1
+Elle Wings Party Wear  (Black)|?399
+Colour: Black
+0.25 inch Heel Height
+Outer Material: Lycra
+
+lshoes2
+Clarks Little Darcy Navy Leather Casual Shoes  (Navy)|?1,724
+Colour: Navy
+Closure: Velcro
+
+shofa1
+Durian SALINA Leatherette 3 + 2 Pebble Beige Sofa Set  (Configuration - Straight)|?81,510
+Leatherette
+Filling Material: Foam, Silicone Fiber
+Secondary Material: NA
+Knock Down
+
+shofa2
+Durian BERRY/55003/A Leatherette 3 + 2 + 1 Eerie Black Sofa Set  (Configuration - Straight)|?111,540
+Leatherette
+Filling Material: Foam, Silicone Fiber
+
+table1
+Craft Creations Plastic Coffee Table  (Finish Color - Glossy)|?1,975
+Particle Board
+Plastic
+Width x Height x Depth 610 mm x 430 mm x 460 mm
+Delivery Condition: DIY(Do-It-Yourself)
+Storage Included
+
+table2
+Smarvvv Productions Classy Solid Wood Coffee Table  (Finish Color - Brown)|?6,500
+Rosewood (Sheesham)
+Engineered Wood
+Width x Height x Depth 520 mm x 500 mm x 510 mm
+Delivery Condition: Knock Down
+
+bed1
+Sleepdry Cotton King Bed Cover  (Maroon)|?1,799
+Type: Bed Cover
+Size: King
+Pattern: Plain
+
+bed2
+COIRFIT BONE ZONE 4 inch Queen Foam Mattress  (75x66x4 inch)|?9,569
+Bonded Foam
+Orthopaedic Support
+Reversible Mattress
+Queen Size
+
+helmet1
+LS2 Commander Motorbike Helmet - L  (Matt Black)|?4,400
+Type: Full Face
+For Men
+Visor Present
+Size: L
+
+helmet2
+Vega Off Road Ranger Motorsports Helmet - M  (Dull Black Red)|?2,096
+Type: Full Face
+Visor Present
+Size: M
+
+care1
+Formula 1 Scratch Remover Liquid  (227 g)|?425
+Pack Type: Bottle
+Pack of 1
+Form: Liquid
+Quantity: 227 g
+
+care2
+SOFTSPUN Vehicle Washing Cloth  (Pack Of 5)|?238
+Color: Multicolor
+Non Linting
+Length x Width : 40 cm x 40 cm
+Pack of 5
+
+tyre1
+Michelin Pilot_Sporty Tube Less Tyre|?1,600
+Construction Type: Bias
+Positioning: Front
+Diameter: 17 mm
+Pack of: 1
+Used For: Street
+
+tyre2
+Metro 150/60R-17 BAZOOKA Radial Tube Less Tyre|?3,092
+Construction Type: Radial
+Positioning: Rear
+Diameter: 17 inch
+Pack of: 1
+Used For: Street
+
+book1
+Concepts of Physics (Volume - 1) 1st Edition  (English, Paperback, H C Verma)|?176
+Language: English
+Binding: Paperback
+Publisher: BHARATI BHAWAN PUB.& DIS-NEW DELHI
+ISBN: 9788177091878, 8177091875
+Edition: 1st Edition, 2015
+
+book2
+Oxford English-English- Marathi Dictionary  (Hardcover, DR. R. V. DHONGDE)|?375
+Binding: Hardcover
+Publisher: Oxford University Press
+ISBN: 9780195689655, 0195689658
+Edition: 2011
+
+statio1
+Enwraps 1 Compartments wood Pen stand  (Blue)|?450
+90 mm, 110 mm, 90 mm
+1 Compartment
+
+statio2
+GCT Thor Hammer Marvel Avengers Superhero Gold Metal Design-2 Key Chain  (Gold)|?197
+Gold Color
+Key Chain
+Material: Metal
+Locking - No
+
+music1
+Soy Impulse QI MEI 24-Holes Tremolo Harmonica  (Multicolor)|?599
+Type: Musical Instruments
+Material: Plastic
+2 - 3 Years
+Non-battery Operated
+Non-rechargeable Batteries
+
+music2
+A R ENTERPRISES MUSICAL LIGHTING GUITAR  (Multicolor)|?360
+Type: Musical Instruments
+Material: Plastic
+5 - 9 Years
+Battery Operated, 3 Battteries
+Non-rechargeable Batteries
+Secondary Material: NA
+Knock Down
