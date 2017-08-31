@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="login_text">Login Page</string>
+    <string name="user_text">User Name :</string>
+    <string name="password_text">Password :</string>
+    <string name="attempts_text">Attempts :</string>
+    <string name="button_login">Login</string>
+    <string name="secon_page_text">Welcome to the friends app</string>
+    <string name="img">img</string>
+    <string name="img1">img</string>
+</resources>
