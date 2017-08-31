@@ -1,0 +1,366 @@
+<html>
+<head>
+<title>Online Shopping</title>
+
+<style >
+.product_title{
+ font-size: 15px;
+padding:5px 0 5px 0;
+font-weight:bold;
+text-align:left;
+}
+.product_img{
+padding:5px 0 5px 0;
+
+}
+.prod_price{
+    font-size: 18px;
+padding:5px 0 5px 0;
+text-align:left;
+color:black;
+}
+
+body
+{
+background:#E8E8E8;
+padding:0;
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+margin:0px auto auto auto;
+color:#000;
+}
+.button {
+    background-color: orange; 
+    color: #ffffff;
+    text-align: center;
+   border-radius:40px;
+     height:30px;
+     width:200px;
+    }
+.button7 {
+    background-color: gray; 
+    color: white;
+    text-align: center;
+   border-radius:40px;
+     height:30px;
+     width:200px;
+ .active{background-color: #4CAF50;} 
+}
+.button1 {
+    background-color: orange; 
+    color:black;
+    padding: 5px 10px;
+    text-align: left;
+border-radius:10px;
+height:3px;
+width:5px;
+}
+.button2 {
+    background-color: gray; 
+    color: white;
+    padding: 5px 10px;
+    text-align: left;
+border-radius:10px;
+height:3px;
+width:5px;  
+}
+  #c{
+  height: 30px;
+  width: 30px;
+background-color: red;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+img {
+  vertical-align: middle;
+    width: 200px;
+    height: 175px;
+        }
+header, footer {
+    padding: 10px;
+witdh:"100%";
+    color: black;
+    background-color:009933;
+    clear: center;
+    text-align: left;
+}
+.prod_box{
+border-radius:7px;
+background:#ffffff;
+margin: 15px;
+width:220px;
+height:310px;
+float:left;
+padding:30px;
+}
+center_prod_box{
+	width:20px;
+    height:10px;
+    background:#ffffff;
+    float:left;
+    padding:0px; 
+    margin:0px;
+    
+}
+nav {
+    float: right;
+    max-width: 500px;
+    max-height:1700px;
+    margin: 0;
+    padding:0px;
+     background-color:white;
+}
+article {
+    margin-left: 30px;
+    border-right: 0px solid gray;
+    padding:0em ;
+    overflow: hidden;
+ }
+    #orderedProductsTblBody
+    {
+        font-size: 19px;
+    }
+    #cart_total
+    {
+        font-size: 22px;
+    }
+.btn {
+  height: 12px;
+  width: 1px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background-color:red;
+  text-color:black;
+}
+    #im
+    {
+        height: 30px;
+        width: 30px;
+    }
+    #list
+    {
+        width:20px;
+        height: 20px;
+        }
+    #grid
+    {
+        width:20px;
+        height: 20px;
+    }
+.button10{
+background-color:#cccbcb;
+    }
+</style>
+<head>
+
+<script language="javascript">
+   var shoppingCart = [];
+    var i=0;
+   function displayShoppingCart(){
+        var orderedProductsTblBody=document.getElementById("orderedProductsTblBody");
+        while(orderedProductsTblBody.rows.length>0) {
+            orderedProductsTblBody.deleteRow(0);
+        }
+      var cart_total_price=0;
+        for(var product in shoppingCart){
+            var row=orderedProductsTblBody.insertRow();
+            var cellName = row.insertCell(0);
+            var cellDescription = row.insertCell(1);
+            var cellPrice = row.insertCell(2);
+            cellPrice.align="right";
+            cellName.innerHTML = shoppingCart[product].Name;
+            cellDescription.innerHTML = shoppingCart[product].Description;
+            cellPrice.innerHTML = shoppingCart[product].Price;
+            cart_total_price+=shoppingCart[product].Price;
+    }
+        document.getElementById("cart_total").innerHTML="Total="+cart_total_price;
+    }
+
+    function AddtoCart(name,description,price,button){
+       var singleProduct = {};
+       singleProduct.Name=name;
+       singleProduct.Description=description;
+       singleProduct.Price=price;
+       shoppingCart.push(singleProduct);
+        document.getElementById("c").innerHTML=i+1;
+        i++;
+       displayShoppingCart();
+    }  
+    function myDeleteFunction() {
+    document.getElementById("orderedProductsTblBody").remove();
+     cart_total_price=0;
+	 document.getElementById("cart_total").innerHTML=cart_total_price;
+    document.getElementById("c").innerHTML=0;
+        
+}
+    function listf()
+    {
+        document.getElementById('.prod_box').style.width="350px";
+        document.getElementById('.prod_box').style.height="200px";
+    }
+</script>
+</head>
+<body>
+
+<div class="goods">
+<header><font color="white" size="3">
+   ONLINE SHOPPING   </font>
+      &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="icon1.png" id="im"/>&nbsp;<font color="white" size="2"><b>Cart</b></font>&nbsp;
+    <button id="c"></button>
+</header>
+<nav> 
+<table width="500" height="1200" border="0" cellpadding="2" cellspacing="2" background-color="white">
+         <p><h5><font color="blue" size="4">Your Shopping Cart</font></h5></p>
+        <td valign="top">
+            <table cellpadding="20" cellspacing="20" border="0" id="orderedProductsTbl">
+                <thead>
+                    <tr>
+                        <td >
+                        </td>
+                        <td >
+                        </td>
+                        <td >
+                        </td>
+                        <td>
+                            <input type ="button"  class="button10" color="red" value="X" onclick="myDeleteFunction()"/>
+                        </td>
+                        <td>
+                     </tr>
+                </thead>
+                <tbody id="orderedProductsTblBody">
+                </tbody>
+                 <tfoot>
+                    <tr>
+                        <td height="25" colspan="3" align="right" id="cart_total">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table></table>
+        </td>
+    </tr>
+</table>
+
+  </nav>
+  &nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ &nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button onclick="grid()">
+<img src="grid1.png" id="grid"></button>
+<button onclick="listf()">
+<img src="list.png" id="list">
+</button>
+<article>
+      <div class="prod_box">
+<div class="center_prod_box">
+          <div class="product_img"><a href="details.html"><img src="adid.jpg" alt="" border="0" /></a></div>
+ <div> &nbsp;&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="button1" class="acctive"></i>IN STOCK</a></div>
+            <div class="product_title"><a >Adidas </a></div>
+             <div class="product_title"><a href="details.html">Casual</a></div>
+          <div class="prod_price"><span class="price"><font color="black">₹3500</span> </div>
+<input type ="button"class="button" value="ADD TO CART"    onclick="AddtoCart('Adidas','Casual',3500)"/>
+         </div>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="prod_box">
+       <div class="center_prod_box">
+          <div class="product_img"><a href="details.html"><img src="nikeair.jpg" alt="" border="0" /></a></div>
+              <div> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="button2"></i>OUT OF STOCK</a></div>
+          <div class="product_title"><a href="details.html">Nike </a></div>
+            <div class="product_title"><a href="details.html">Air</a></div>
+          <div class="prod_price"><span class="price"><font color="black">₹2500</span></div>
+             <input type ="button"class="button7" value="ADD TO CART"    />
+        </div>
+        </div>
+      <div class="prod_box">
+        <div class="center_prod_box">
+         <div class="product_img"><a href="details.html"><img src="nikelunarglide.jpg" alt="" border="0" /></a></div>
+ <div> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="button1"></i>IN STOCK</a></div>
+           <div class="product_title"><a href="details.html">Nike </a></div>
+           <div class="product_title"><a href="details.html">Lunarglide</a></div>
+          <div class="prod_price"><span class="price"><font color="black">₹3000</span></div>
+         <input type ="button"  class="button"value="ADD TO CART"    onclick="AddtoCart('Nike','Lunarglide',3000)"/>
+        </div>
+        </div>
+        <br>
+      <div class="prod_box">
+        <div class="center_prod_box">
+          <div class="product_img"><a href="details.html"><img src="snikers.flatknit.jpg" alt="" border="0" /></a></div>
+ <div> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="button1"></i>IN STOCK</a></div>
+            <div class="product_title"><a >Snikers </a></div>
+ <div class="product_title"><a href="details.html">Flantkit</a></div>
+          <div class="prod_price"><span class="price"><font color="black">₹1500</span> </div>
+         <input type ="button"  class="button" value="ADD TO CART"  onclick="AddtoCart('Snikers','Flantknit',1500)"/>
+        </div>
+       </div>
+    <div>
+</div>
+  <div class="prod_box">
+      <div class="center_prod_box">
+          <div class="product_img"><a href="details.html"><img src="Nikezoom.jpg" alt="" border="0" /></a></div>
+ <div> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="button1"></i>IN STOCK</a></div>
+           <div class="product_title"><a href="details.html">Nike </a></div>
+            <div class="product_title"><a href="details.html">Zoom</a></div>
+          <div class="prod_price"><span class="price"><font color="black">₹2000</span> </div>
+       <input type ="button"  class="button"value="ADD TO CART"    onclick="AddtoCart('Nike','Zoom',2000)"/>
+        </div>
+         </div>
+      <div class="prod_box">
+             <div class="center_prod_box">
+          <div class="product_img"><a href="details.html"><img src="puma.jpg" alt="" border="0" /></a></div>
+ <div> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="button1"></i>IN STOCK</a></div>
+           <div class="product_title"><a href="details.html">Puma</a></div>
+           <div class="product_title"><a href="details.html">Casuals</a></div>
+          <div class="prod_price"><span class="price"><font color="black">Rs.2700</span></div>
+         <input type ="button" class="button"value="ADD TO CART"    onclick="AddtoCart('Puma','casuals',2700)"/>
+        </div>
+        </div>
+<div class="prod_box">
+    <div class="center_prod_box">
+          <div class="product_img"><a href="details.html"><img src="wood.jpg" alt="" border="0" /></a></div>
+ <div> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="button1"></i>IN STOCK</a></div>
+           <div class="product_title"><a href="details.html">Woodland</a></div>
+            <div class="product_title"><a href="details.html">Casuals</a></div>
+          <div class="prod_price"><span class="price"><font color="black">₹4000</span></div>
+         <input type ="button" class="button"value="ADD TO CART"    onclick="AddtoCart('Woodland','',4000)"/>
+        </div>
+        </div>
+<div class="prod_box">
+      <div class="center_prod_box">
+          <div class="product_img"><a href="details.html"><img src="Formals.jpg" alt="" border="0" /></a></div>
+ <div> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="button2"></i>OUT OF STACK</a></div>
+           <div class="product_title"><a href="details.html">Formals </a></div>
+         <div class="product_title"><a href="details.html">Black</a></div>
+          <div class="prod_price"><span class="price"><font color="black">₹1700</span></div>
+        <input type ="button" class="button7" value="ADD TO CART"    onclick="AddtoCart('Fomals',black',1700)"/>
+        </div>
+        </div>
+<div class="prod_box">
+        <div class="center_prod_box">
+          <div class="product_img"><a href="details.html"><img src="brown.jpg" alt="" border="0" /></a></div>
+ <div> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#" class="button1"></i>IN STOCK</a></div>
+           <div class="product_title"><a href="details.html">Formals </a></div>
+           <div class="product_title"><a href="details.html">Brown</a></div>
+          <div class="prod_price"><span class="price"><font color="black">₹2200</span></div>
+         <input type ="button"  class="button"value="ADD TO CART"    onclick="AddtoCart('Formals','Brown',2200)"/>
+        </div>
+        </div>
+   </article>
+</div>
+</body>
+</html>
